@@ -1,0 +1,25 @@
+
+<!--  -->
+
+<form method="post">
+    <input name="prenom" placeholder="Prénom"></input>
+    <input name="nom" placeholder="Nom"></input>
+    <input type="submit" />
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-th-each="pers : ${personnes}">
+            <td data-th-text="${pers.id}"></td>
+            <td data-th-text="${pers.prenom}"></td>
+            <td data-th-text="${pers.nom}"></td>
+        </tr>
+    </tbody>
+</table>
