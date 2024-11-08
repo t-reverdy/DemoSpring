@@ -11,13 +11,18 @@ public class Personne {
 	private String prenom;
 	private String nom;
 	private String email;
+	private String dateNaiss;
+	private String tel;
 
 	public Personne() {
 	}
 
-	public Personne(String prenom, String nom) {
+	public Personne(String prenom, String nom, String email, String dateNaiss, String tel) {
 		this.prenom = prenom;
 		this.nom = nom;
+		this.email = email;
+		this.dateNaiss = dateNaiss;
+		this.tel = tel;
 	}
 
 	@Override
@@ -27,6 +32,8 @@ public class Personne {
 				", prenom='" + prenom + '\'' +
 				", nom='" + nom + '\'' +
 				", email='" + email + '\'' +
+				", dateNaiss='" + dateNaiss + '\'' +
+				", tel='" + tel + '\'' +
 				'}';
 	}
 
@@ -56,6 +63,22 @@ public class Personne {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String getDateNaiss() {
+		return dateNaiss;
+	}
+
+	public void setDateNaiss(String dateNaiss) {
+		this.dateNaiss = dateNaiss;
+	}
+
+	public String getTel() {
+		return tel;
+	}
+
+	public void setTel(String tel) {
+		this.tel = tel;
 	}
 
 }
